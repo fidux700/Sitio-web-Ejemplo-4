@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../PARCIAL N°2 Goñi Fernando/Bootstrap/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Estilos/login.css">
+    <title>Login Small Robots</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <header>
+        <div class="container-fluid">
+            <div id="ContenedorTitulo" class="row">
+                <h1 class="TituloPrincipal"><span class="TituloSpan">Small Robots</span></h1>
+                <h3 class="DescripcionPrincipal"><span class="DescripcionSpan">Centro educativo de robótica</span></h3>
+            </div>
+            
+            <div class="row generic">
+                <nav class="nav justify-content-center">
+                    <h3 class="DescripcionSpan">¿Deseas volver a la web principal? <a href="../index.html">VOLVER</a></h3>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row generic justify-content-center">
+                <h2 class="Subtitulos">Iniciar sesión</h2>
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                          <label for="Usuario" class="form-label">USUARIO</label>
+                          <input type="text" class="form-control" id="Usuario" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="Contraseña" class="form-label">CONTRASEÑA</label>
+                          <input type="password" class="form-control" id="Contraseña" required>
+                        </div>
+                        <button type="submit" class="BotonIngresar">INGRESAR</button>
+                    </form>
+                        
+                </div>
+            
+            </div>
+        </div>
+                
+        <script>document.getElementById("loginForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            var usuario = document.getElementById("Usuario").value;
+            var contraseña = document.getElementById("Contraseña").value;
+            
+            if (usuario === "agustina" && contraseña === "123"){
+                var url = "alumno.html?usuario=" + usuario;
+                window.location.href = url;
+                
+            }
+            else if (usuario === "rodrigo" && contraseña === "123"){
+                var url = "docente.html?usuario=" + usuario;
+                window.location.href = url;
+            }
+
+            else{
+
+                alert("Usuario incorrecto");
+                
+            }
+        } );
+        </script>
+                
+        
+    </main>
+    <footer>
+        <div class="container contenedorFooter">
+            <div class="row justify-content-end">
+                <div class="col-lg-4 col-sm-12">
+                    <ul class="listaFooter">
+                        <li><a href="https://es.wikipedia.org/wiki/Rob%C3%B3tica" target="_blank">¿Qué es la Robótica?</a></li>
+                        <li><a href="https://bookandbit.com/la-importancia-de-la-robotica-educativa-para-ninos/" target="_blank">¿Aprender Robótica a temprana edad?</a></li>
+                        <li><a href="https://www.educacionit.com/curso-de-robotica?gclid=CjwKCAiA6byqBhAWEiwAnGCA4AptrQlSTZQJcvkczBhv0CpbGVyLdjkHhD_8GB00I8neIOfDNyx8iBoCh8YQAvD_BwE" target="_blank">¿Sos adulto y deseas aprender Robótica?</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <ul class="listaFooter">
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="../Multimedia/instagramIcono.png" alt="Instagram"></a><span>  Seguinos en instagram!</span></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="../Multimedia/youtubeIcono.png" alt="Youtube"></a><span>  Seguinos en Youtube!</span></li>
+                    </ul>
+                    <h4>Todos los derechos reservados SmallRobots - <span class="spanFooter">By Fernando Goñi - UNAHUR</span></h4> 
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

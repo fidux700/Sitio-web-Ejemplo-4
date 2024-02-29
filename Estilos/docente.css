@@ -1,0 +1,207 @@
+
+/* HEADER */
+
+.TituloPrincipal{
+    font-family: fantasy, serif;
+    font-style: italic;
+}
+
+.DescripcionPrincipal{
+    font-family: serif, sans-serif;
+    font-style: italic;
+}
+
+
+
+
+
+
+.TituloSpan{
+    font-size:2em;
+    color: orange;
+    animation: titulo 2s 1;
+}
+
+
+.DescripcionSpan{
+    animation: Descripcion 2s 1;
+    color: wheat;
+}
+
+.DescripcionSpan a{
+    text-decoration: none;
+    color: cyan;
+
+}
+
+.spanDocente{
+    color: wheat;
+    font-size: 0.5em;
+}
+
+
+.nav a:hover{
+    color: orange;
+    border-top: 1px solid rgb(97,57,0);
+    border-bottom: 1px solid rgb(97,57,0);
+    font-weight: bold;
+    transition: all 1.5s;
+}
+
+.nav a{
+    font-family: fantasy, serif;
+    text-decoration:none;
+    color: wheat;
+}
+
+@keyframes Descripcion{
+
+    0%{
+        margin-bottom: -40px;
+        color: orange;
+        visibility: hidden;
+    }
+    
+    
+    
+    
+    30%{
+        margin-bottom: -40px;
+        color: gold;
+        visibility: visible;
+    }
+}
+    
+
+
+
+@keyframes titulo{
+
+    0%{
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+        color: black;
+    }
+    
+
+
+
+    30%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+        color: black;
+    }
+    
+   
+}
+
+/* ----------------------------------------------------------------------- */
+/* MAIN */
+
+.Subtitulos{
+    font-size: 3em;
+    font-family: serif, sans-serif;
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.anuncio{
+    color: darkgoldenrod;
+}
+
+.anuncio span{
+    color: wheat;
+}
+
+.list-group li{
+    font-weight:bold;
+}
+
+.list-group li:nth-child(1){
+    background-color: yellow;
+}
+
+.list-group li:nth-child(2){
+    background-color: red;
+    color: white;
+}
+
+.list-group li:nth-child(3){
+    background-color: violet;
+}
+
+.list-group li:nth-child(4){
+    background-color: blue;
+    color: white;
+}
+
+.list-group li:nth-child(5){
+    background-color: green;
+}
+
+p{
+    font-weight: bold;
+}
+
+.card1, .card2{
+    background-color: yellow;
+}
+
+.card3{
+    background-color: red;
+}
+
+
+
+.card6{
+    background-color: blue;
+}
+ 
+.card4, .card5{
+    background-color: violet;
+}
+
+.card8, .card7{
+    background-color: green;
+}
+
+/* ----------------------------------------------------------------------- */
+/* FOOTER */
+footer{
+    color: wheat;
+    background: rgb(97,57,0);
+    background: linear-gradient(101deg, rgba(97,57,0,1) 0%, rgba(255,81,0,0.31985294117647056) 0%, rgba(95,14,14,0.38147759103641454) 0%, rgba(28,1,9,1) 0%, rgba(95,12,12,1) 100%);
+}
+
+
+.spanFooter{
+    color: goldenrod;
+    font-style: italic;
+}
+
+.listaFooter li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.listaFooter li{
+    list-style: none;
+}
+
+/* ----------------------------------------------------------------------- */
+/* GENERAL */
+.generic{
+    padding: 5px;
+    margin: 50px;
+}
+
+body{
+
+    background: rgb(97,57,0);
+    background: linear-gradient(101deg, rgba(97,57,0,1) 0%, rgba(255,81,0,0.31985294117647056) 0%, rgba(95,14,14,0.38147759103641454) 0%, rgba(28,1,9,1) 0%, rgba(44,2,2,1) 0%);
+
+}
+
+.form-control{
+    resize: none;
+}
